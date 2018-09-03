@@ -165,7 +165,7 @@ const ColumnLayout = styled.div`
     flex: 1;
     padding: 10px;
 
-    &.is-three-quarters
+    &.is-three-quarters,
     &.is-three-quarters-tablet {
         @media screen and (min-width: 769px){
             -webkit-box-flex: 0;
@@ -175,4 +175,40 @@ const ColumnLayout = styled.div`
             width: 75%;
         }
     }
+
+    &.is-two-thirds,
+    &.is-two-thirds-tablet {
+      -webkit-box-flex: 0;
+      -webkit-flex: none;
+      -ms-flex: none;
+      flex: none;
+      width: 66.6666%;
+    }
+
+    &.is-half,
+    &.is-half-tablet {
+      -webkit-box-flex: 0;
+      -webkit-flex: none;
+      -ms-flex: none;
+      flex: none;
+      width: 50%;
+    }
+
+    &.is-one-third,
+    &.is-one-third-tablet {
+      -webkit-box-flex: 0;
+      -webkit-flex: none;
+      -ms-flex: none;
+      flex: none;
+      width: 33.3333%;
+    }
+
+    &.is-one-quarter, 
+    &.is-one-quarter-tablet {
+      -webkit-box-flex: 0;
+      -webkit-flex: none;
+      -ms-flex: none;
+      flex: none;
+      width: 25%;
+  }
 `
