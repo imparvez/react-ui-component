@@ -6,6 +6,13 @@ import { withStorySource } from '@storybook/addon-storysource'
 
 import Button from './components/Button';
 import Colors from './components/Colors';
+import Cards from './components/Cards';
+import CardContent from './components/Cards/CardContent';
+import CardHeader from './components/Cards/CardHeader';
+import CardImage from './components/Cards/CardImage';
+import Image from './components/Image';
+
+const style = { padding: '10px' };
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -85,4 +92,40 @@ storiesOf('Button', module)
         <Colors color="isColorFourteen" />
       </Fragment>
     ))
+    storiesOf('Card', module)
+      .addDecorator(withStorySource(`
+        import React from 'react'
+        import Cards from './components/Cards';
+        import CardContent from './components/Cards/CardContent';
+        import CardHeader from './components/Cards/CardHeader';
+        import CardImage from './components/Cards/CardImage';
+        import Image from './components/Image';
+
+        <Cards>
+          <CardHeader>
+            <CardImage>
+              <Image src="http://placehold.it/300x225" ratio="is300X225"/>
+            </CardImage>
+          </CardHeader>
+          <CardContent>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis 			mauris. <a href="#">#css</a> <a href="#">#responsive</a>
+            <small>11:09 PM - 1 Jan 2016</small>
+          </CardContent>
+        </Cards>
+      `))
+      .add('Card', () => (
+        <Fragment>
+          <Cards>
+            <CardHeader>
+              <CardImage>
+                <Image src="http://placehold.it/300x225" ratio="is4By3"/>
+              </CardImage>
+            </CardHeader>
+            <CardContent>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Phasellus nec iaculis mauris.
+            </CardContent>
+          </Cards>
+        </Fragment>
+      ))
 
