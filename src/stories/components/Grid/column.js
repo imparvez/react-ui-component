@@ -210,5 +210,9 @@ const ColumnLayout = styled.div`
       -ms-flex: none;
       flex: none;
       width: 25%;
-  }
+    }
+
+    &.is-2 {
+
+    }
 `

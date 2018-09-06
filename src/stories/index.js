@@ -141,22 +141,22 @@ storiesOf('Grid', module)
 
   <Columns>
     <Column style={style}>
-      <Notification color="isInfo">
+      <Notification>
         First column
       </Notification>  
     </Column>
     <Column style={style}>
-      <Notification color="isSuccess">
+      <Notification>
         Second column
       </Notification>  
     </Column>
     <Column style={style}>
-      <Notification color="isWarning">
+      <Notification>
         Third column
       </Notification>  
     </Column>
     <Column style={style}>
-      <Notification color="isDanger">
+      <Notification>
         Fourth column
       </Notification>  
     </Column>
@@ -166,115 +166,202 @@ storiesOf('Grid', module)
     <Fragment>
       <Columns>
         <Column style={style}>
-          <Notification color="isInfo">
+          <Notification>
             First column
           </Notification>  
         </Column>
         <Column style={style}>
-          <Notification color="isSuccess">
+          <Notification>
             Second column
           </Notification>  
         </Column>
         <Column style={style}>
-          <Notification color="isWarning">
+          <Notification>
             Third column
           </Notification>  
         </Column>
         <Column style={style}>
-          <Notification color="isDanger">
+          <Notification>
             Fourth column
           </Notification>  
         </Column>
       </Columns>
     </Fragment>
   ))
-  .add('Quarters', () => (
-    <Fragment>
+  .addDecorator(withStorySource(`
     <Columns>
       <Column size="isThreeQuarters" style={style}>
-        <Notification color="isInfo">
+        <Notification>
           is-three-quarters
         </Notification>  
       </Column>
       <Column style={style}>
-        <Notification color="isWarning">
+        <Notification>
           Auto
         </Notification>  
       </Column>
       <Column style={style}>
-        <Notification color="isDanger">
+        <Notification>
           Auto
         </Notification>  
       </Column>
     </Columns>
     <Columns>
       <Column size="isTwoThirds" style={style}>
-        <Notification color="isInfo">
+        <Notification>
           is-two-thirds
         </Notification>  
       </Column>
       <Column style={style}>
-        <Notification color="isWarning">
+        <Notification>
           Auto
         </Notification>  
       </Column>
       <Column style={style}>
-        <Notification color="isDanger">
+        <Notification>
           Auto
         </Notification>  
       </Column>
     </Columns> 
     <Columns>
       <Column size="isHalf" style={style}>
-        <Notification color="isInfo">
+        <Notification>
           is-half
         </Notification>  
       </Column>
       <Column style={style}>
-        <Notification color="isWarning">
+        <Notification>
           Auto
         </Notification>  
       </Column>
       <Column style={style}>
-        <Notification color="isDanger">
+        <Notification>
           Auto
         </Notification>  
       </Column>
     </Columns>        
     <Columns>
       <Column size="isOneThird" style={style}>
-        <Notification color="isInfo">
+        <Notification>
           is-one-third
         </Notification>  
       </Column>
       <Column style={style}>
-        <Notification color="isWarning">
+        <Notification>
           Auto
         </Notification>  
       </Column>
       <Column style={style}>
-        <Notification color="isDanger">
+        <Notification>
           Auto
         </Notification>  
       </Column>
     </Columns>       
     <Columns>
       <Column size="isOneQuarter" style={style}>
-        <Notification color="isInfo">
+        <Notification>
           is-one-quarter
         </Notification>  
       </Column>
       <Column style={style}>
-        <Notification color="isWarning">
+        <Notification>
           Auto
         </Notification>  
       </Column>
       <Column style={style}>
-        <Notification color="isDanger">
+        <Notification>
           Auto
         </Notification>  
       </Column>
     </Columns>
+  `))
+  .add('Quarters', () => (
+    <Fragment>
+      <Columns>
+        <Column size="isThreeQuarters" style={style}>
+          <Notification>
+            is-three-quarters
+          </Notification>  
+        </Column>
+        <Column style={style}>
+          <Notification>
+            Auto
+          </Notification>  
+        </Column>
+        <Column style={style}>
+          <Notification>
+            Auto
+          </Notification>  
+        </Column>
+      </Columns>
+      <Columns>
+        <Column size="isTwoThirds" style={style}>
+          <Notification>
+            is-two-thirds
+          </Notification>  
+        </Column>
+        <Column style={style}>
+          <Notification>
+            Auto
+          </Notification>  
+        </Column>
+        <Column style={style}>
+          <Notification>
+            Auto
+          </Notification>  
+        </Column>
+      </Columns> 
+      <Columns>
+        <Column size="isHalf" style={style}>
+          <Notification>
+            is-half
+          </Notification>  
+        </Column>
+        <Column style={style}>
+          <Notification>
+            Auto
+          </Notification>  
+        </Column>
+        <Column style={style}>
+          <Notification>
+            Auto
+          </Notification>  
+        </Column>
+      </Columns>        
+      <Columns>
+        <Column size="isOneThird" style={style}>
+          <Notification>
+            is-one-third
+          </Notification>  
+        </Column>
+        <Column style={style}>
+          <Notification>
+            Auto
+          </Notification>  
+        </Column>
+        <Column style={style}>
+          <Notification>
+            Auto
+          </Notification>  
+        </Column>
+      </Columns>       
+      <Columns>
+        <Column size="isOneQuarter" style={style}>
+          <Notification>
+            is-one-quarter
+          </Notification>  
+        </Column>
+        <Column style={style}>
+          <Notification>
+            Auto
+          </Notification>  
+        </Column>
+        <Column style={style}>
+          <Notification>
+            Auto
+          </Notification>  
+        </Column>
+      </Columns>
     </Fragment>
   ))
 
