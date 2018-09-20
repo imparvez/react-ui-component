@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { linkTo } from '@storybook/addon-links';
 import { withStorySource } from '@storybook/addon-storysource'
+import { withBackgrounds } from '@storybook/addon-backgrounds';
 
 import Button from './components/Button';
 import Colors from './components/Colors';
@@ -58,42 +59,38 @@ storiesOf('Color', module)
   import React from 'react';
   import Colors from './components/Colors';
 
-  <Colors color="isColorOne" />
-  <Colors color="isColorTwo" />
-  <Colors color="isColorThree" />
-  <Colors color="isColorFour" />
-  <Colors color="isColorOne" />
-  <Colors color="isColorTwo" />
-  <Colors color="isColorThree" />
-  <Colors color="isColorFour" />
-  <Colors color="isColorFive" />
-  <Colors color="isColorSix" />
-  <Colors color="isColorSeven" />
-  <Colors color="isColorEight" />
-  <Colors color="isColorNine" />
-  <Colors color="isColorTen" />
-  <Colors color="isColorEleven" />
-  <Colors color="isColorTwelve" />
-  <Colors color="isColorThirteen" />
-  <Colors color="isColorFourteen" />
+  <Colors color="isColorOne">Colors</Colors>
+  <Colors color="isColorTwo">Colors</Colors>
+  <Colors color="isColorThree">Colors</Colors>
+  <Colors color="isColorFour">Colors</Colors>
+  <Colors color="isColorFive">Colors</Colors>
+  <Colors color="isColorSix">Colors</Colors>
+  <Colors color="isColorSeven">Colors</Colors>
+  <Colors color="isColorEight">Colors</Colors>
+  <Colors color="isColorNine">Colors</Colors>
+  <Colors color="isColorTen">Colors</Colors>
+  <Colors color="isColorEleven">Colors</Colors>
+  <Colors color="isColorTwelve">Colors</Colors>
+  <Colors color="isColorThirteen">Colors</Colors>
+  <Colors color="isColorFourteen">Colors</Colors>
   `))
   .add('List', () => (
-    <Fragment>
-      <Colors color="isColorOne" />
-      <Colors color="isColorTwo" />
-      <Colors color="isColorThree" />
-      <Colors color="isColorFour" />
-      <Colors color="isColorFive" />
-      <Colors color="isColorSix" />
-      <Colors color="isColorSeven" />
-      <Colors color="isColorEight" />
-      <Colors color="isColorNine" />
-      <Colors color="isColorTen" />
-      <Colors color="isColorEleven" />
-      <Colors color="isColorTwelve" />
-      <Colors color="isColorThirteen" />
-      <Colors color="isColorFourteen" />
-    </Fragment>
+    <div className="bg">
+      <Colors color="isColorOne">Colors</Colors>
+      <Colors color="isColorTwo">Colors</Colors>
+      <Colors color="isColorThree">Colors</Colors>
+      <Colors color="isColorFour">Colors</Colors>
+      <Colors color="isColorFive">Colors</Colors>
+      <Colors color="isColorSix">Colors</Colors>
+      <Colors color="isColorSeven">Colors</Colors>
+      <Colors color="isColorEight">Colors</Colors>
+      <Colors color="isColorNine">Colors</Colors>
+      <Colors color="isColorTen">Colors</Colors>
+      <Colors color="isColorEleven">Colors</Colors>
+      <Colors color="isColorTwelve">Colors</Colors>
+      <Colors color="isColorThirteen">Colors</Colors>
+      <Colors color="isColorFourteen">Colors</Colors>
+    </div>
   ))
 
 storiesOf('Card', module)
@@ -359,6 +356,55 @@ storiesOf('Grid', module)
         <Column style={style}>
           <Notification>
             Auto
+          </Notification>  
+        </Column>
+      </Columns>
+      <Columns>
+        <Column size="is2" style={style}>
+          <Notification>
+            2
+          </Notification>
+        </Column>
+        <Column size="is4" style={style}>
+          <Notification>
+            4
+          </Notification>
+        </Column>
+        <Column size="is1" style={style}>
+          <Notification>
+            1
+          </Notification>
+        </Column>
+        <Column size="is5" style={style}>
+          <Notification>
+            5
+          </Notification>
+        </Column>
+      </Columns>
+      <Columns isMultiline>
+        <Column size="is2" style={style}>
+          <Notification color="isInfo">
+            2
+          </Notification>  
+        </Column>
+        <Column size="is10" style={style}>
+          <Notification color="isWarning">
+            10
+          </Notification>  
+        </Column>
+        <Column size="is1" style={style}>
+          <Notification color="isSuccess">
+            1
+          </Notification>  
+        </Column>
+        <Column size="is5" style={style}>
+          <Notification color="isDanger">
+            5
+          </Notification>  
+        </Column>
+        <Column size="is6" style={style}>
+          <Notification color="isPrimary">
+            6
           </Notification>  
         </Column>
       </Columns>

@@ -25,6 +25,11 @@ module.exports = {
     "isColorThirteen": "colorThirteen",
     "isColorFourteen": "colorFourteen",
     "notification": "notification",
+    "is1": "is-1",
+    "is1Mobile": "is-1-mobile",
+    "is1Tablet": "is-1-tablet",
+    "is1Desktop": "is-1-desktop",
+    "is1Widescreen": "is-1-widescreen",
     "is2": "is-2",
     "is2Mobile": "is-2-mobile",
     "is2Tablet": "is-2-tablet",
@@ -110,4 +115,5 @@ module.exports = {
     "isSuccess": "is-success",
     "isWarning": "is-warning",
     "isDanger": "is-danger",
+    "isMultiline": "is-multiline"
 }

@@ -3,6 +3,17 @@ import styled, { keyframes } from 'styled-components';
 
 import styles from '../styles';
 
+const colorsStyle = {
+    fontSize: '24px',
+    fontFamily: 'monospace',
+    textTransform: 'capitalize',
+    margin: '10px',
+    padding: '10px',
+    border: '1px dashed',
+    maxWidth: '150px',
+    textAlign: 'center',
+    display: 'inline-block',
+}
 export default class Colors extends Component {
     createClassName(){
         return [
@@ -20,7 +31,7 @@ export default class Colors extends Component {
 
     render(){
         return(
-            <ColorPallete className={this.createClassName()}>
+            <ColorPallete style={colorsStyle} className={this.createClassName()}>
                 {this.renderBody()}
             </ColorPallete>
         )
@@ -28,66 +39,60 @@ export default class Colors extends Component {
 }
 
 const ColorPallete = styled.div`
-    max-width: 147px;
-    width: 100%;
-    height: 147px;
-    display: inline-block;
-    margin: 30px;
-
     &.colorOne {
-        background-color: #000000;
+        color: #000000;
     }
 
     &.colorTwo {
-        background-color: #1F2533;
+        color: #1F2533;
     }
 
     &.colorThree {
-        background-color: #555555;
+        color: #555555;
     }
 
     &.colorFour {
-        background-color: #777777;
+        color: #777777;
     }
 
     &.colorFive {
-        background-color: #CCCCCC;
+        color: #CCCCCC;
     }
 
     &.colorSix {
-        background-color: #EEEEEE;
+        color: #EEEEEE;
     }
 
     &.colorSeven {
-        background-color: #F5F5F5;
+        color: #F5F5F5;
     }
 
     &.colorEight {
-        background-color: #FFFFFF;
+        color: #FFFFFF;
     }
 
     &.colorNine {
-        background-color: #0378FF;
+        color: #0378FF;
     }
 
     &.colorTen {
-        background-color: #F2F8FF;
+        color: #F2F8FF;
     }
 
     &.colorEleven {
-        background-color: #FFF9E3;
+        color: #FFF9E3;
     }
 
     &.colorTwelve {
-        background-color: #4ABD5D;
+        color: #4ABD5D;
     }
 
     &.colorThirteen {
-        background-color: #FFCB01;
+        color: #FFCB01;
     }
 
     &.colorFourteen {
-        background-color: #E8135D;
+        color: #E8135D;
     }
 
 

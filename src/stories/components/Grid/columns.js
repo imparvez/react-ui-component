@@ -64,4 +64,10 @@ const ColumnsLayout = styled.div`
         display: -ms-flexbox;
         display: flex;
     }
+
+    &.is-multiline {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+    }
 `
